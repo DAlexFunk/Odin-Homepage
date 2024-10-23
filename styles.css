@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,30 +8,31 @@
 }
 
 body {
-    background-color: #F7F0F0;
+  font-family: "Radio Canada", monospace, sans-serif;
+  background-color: #f7f0f0;
+  padding: 32px;
 }
 
 div.backgroundDiag {
-  background-color: #9A48D0;
+  background-color: #9a48d0;
   position: absolute;
   height: 500px;
-  width: 100vw;
+  width: calc(100vw + 24px);
   top: -150px;
+  left: -24px;
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.75);
   z-index: -1;
   transform: skewY(-10deg);
 }
 
+/* Header */
 .about {
-  padding: 32px;
-
   display: flex;
   justify-content: center;
 }
 
 div.aboutText {
-  background-color: #F7F0F0;
-  font-family: "Radio Canada", monospace, sans-serif;
+  background-color: #f7f0f0;
   position: relative;
   max-width: 700px;
   min-width: 400px;
@@ -41,12 +42,14 @@ div.aboutText {
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-div.aboutText h1 {
+div.aboutText h2 {
+  font-size: 32px;
   margin-bottom: 18px;
 }
 
 div.aboutText p {
   color: #484349;
+  font-size: 18px;
 }
 
 div.icons {
@@ -79,12 +82,66 @@ img.aboutImg {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.75);
 }
 
-p.name {
-  font-size: 90px;
+h1.name {
+  font-size: 85px;
   font-family: Galada, monospace, sans-serif;
-  color: #F7F0F0;
+  color: #f7f0f0;
   position: absolute;
   bottom: 0px;
   right: 24px;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+}
+
+/* Projects */
+main {
+  margin: 64px 0;
+}
+
+div.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+div.project {
+  margin: 32px 64px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.projectSS {
+  background-color: #28AFB0;
+  min-height: 200px;
+  padding: 8px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+div.projectDesc {
+  position: relative;
+  min-height: 100px;
+  padding: 8px;
+}
+
+div.projectDesc p {
+  color: #484349;
+  margin-top: 4px;
+}
+
+div.projectButtons {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}
+
+button.projectIcon {
+  background-color: #0000;
+  border: none;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
 }
