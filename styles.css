@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-color: #F7F0F0;
+}
+
+div.backgroundDiag {
+  background-color: #9A48D0;
+  position: absolute;
+  height: 500px;
+  width: 100vw;
+  top: -150px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.75);
+  z-index: -1;
+  transform: skewY(-10deg);
+}
+
+.about {
+  padding: 32px;
+
+  display: flex;
+  justify-content: center;
+}
+
+div.aboutText {
+  background-color: #F7F0F0;
+  font-family: "Radio Canada", monospace, sans-serif;
+  position: relative;
+  max-width: 700px;
+  min-width: 400px;
+  height: 300px;
+  padding: 24px;
+  align-self: center;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.aboutText h1 {
+  margin-bottom: 18px;
+}
+
+div.aboutText p {
+  color: #484349;
+}
+
+div.icons {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+}
+
+img.aboutIcon {
+  width: 50px;
+  height: auto;
+}
+
+button.aboutIcon {
+  background-color: #0000;
+  border: none;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+div.image {
+  position: relative;
+  z-index: 1;
+}
+
+img.aboutImg {
+  max-width: 400px;
+  min-height: 400px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.75);
+}
+
+p.name {
+  font-size: 90px;
+  font-family: Galada, monospace, sans-serif;
+  color: #F7F0F0;
+  position: absolute;
+  bottom: 0px;
+  right: 24px;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+}
