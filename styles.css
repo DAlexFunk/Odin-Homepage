@@ -177,6 +177,17 @@ div.footerText p.desc {
   font-size: 20px
 }
 
+div.contactInfo p {
+  display: inline;
+}
+
+div.footerText img {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(97%) saturate(197%) hue-rotate(335deg) brightness(115%) contrast(94%);
+  height: 32px;
+  position: relative;
+  top: 7px;
+}
+
 div.footerIcons button {
   filter: brightness(0) saturate(100%) invert(97%) sepia(97%) saturate(197%) hue-rotate(335deg) brightness(115%) contrast(94%);
   float: right;
