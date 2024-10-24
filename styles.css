@@ -10,7 +10,7 @@
 body {
   font-family: "Radio Canada", monospace, sans-serif;
   background-color: #f7f0f0;
-  padding: 32px;
+  padding-top: 32px;
 }
 
 div.backgroundDiag {
@@ -97,6 +97,10 @@ main {
   margin: 64px 0;
 }
 
+main h2 {
+  margin-left: 32px;
+}
+
 div.projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -144,4 +148,36 @@ button.projectIcon {
   height: 24px;
   width: 24px;
   cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #9a48d0;
+  color: #f7f0f0;
+  padding: 48px 72px;
+  display: flex;
+  gap: 150px;
+}
+
+footer div.footerText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+div.footerText h2 {
+  font-size: 32px;
+}
+
+div.footerText p {
+  font-size: 24px;
+}
+
+div.footerText p.desc {
+  font-size: 20px
+}
+
+div.footerIcons button {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(97%) saturate(197%) hue-rotate(335deg) brightness(115%) contrast(94%);
+  float: right;
 }
