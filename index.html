@@ -13,7 +13,10 @@
       <div class="about">
         <div class="image">
           <h1 class="name">Alex Funk</h1>
-          <img class="aboutImg" src="./images/train700w.jpg" alt="Alex Funk" />
+          <picture>
+            <source media="(max-width: 1200px)" srcset="./images/train350w.jpg">
+            <img class="aboutImg" src="./images/train700w.jpg" alt="Alex Funk" />
+          </picture>
         </div>
         <div class="aboutText">
           <h2>About Me</h2>
@@ -28,12 +31,16 @@
           <div class="icons">
             <button
               class="aboutIcon"
-              style="background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);"
+              style="
+                background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);
+              "
               onclick="window.open('https://github.com/DAlexFunk')"
             ></button>
             <button
               class="aboutIcon"
-              style="background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg);"
+              style="
+                background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg);
+              "
               onclick="window.open('https://www.linkedin.com/in/dalexfunk/')"
             ></button>
           </div>
@@ -55,7 +62,9 @@
             <div class="projectButtons">
               <button
                 class="projectIcon"
-                style="background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);"
+                style="
+                  background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);
+                "
               ></button>
               <button
                 class="projectIcon"
@@ -76,7 +85,9 @@
             <div class="projectButtons">
               <button
                 class="projectIcon"
-                style="background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);"
+                style="
+                  background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);
+                "
               ></button>
               <button
                 class="projectIcon"
@@ -97,7 +108,9 @@
             <div class="projectButtons">
               <button
                 class="projectIcon"
-                style="background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);"
+                style="
+                  background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);
+                "
               ></button>
               <button
                 class="projectIcon"
@@ -118,7 +131,9 @@
             <div class="projectButtons">
               <button
                 class="projectIcon"
-                style="background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);"
+                style="
+                  background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);
+                "
               ></button>
               <button
                 class="projectIcon"
@@ -139,7 +154,9 @@
             <div class="projectButtons">
               <button
                 class="projectIcon"
-                style="background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);"
+                style="
+                  background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);
+                "
               ></button>
               <button
                 class="projectIcon"
@@ -160,7 +177,9 @@
             <div class="projectButtons">
               <button
                 class="projectIcon"
-                style="background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);"
+                style="
+                  background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);
+                "
               ></button>
               <button
                 class="projectIcon"
@@ -199,17 +218,27 @@
         <div class="footerIcons">
           <button
             class="aboutIcon"
-            style="background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg);"
+            style="
+              background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg);
+            "
             onclick="window.open('https://www.linkedin.com/in/dalexfunk/')"
           ></button>
           <button
             class="aboutIcon"
-            style="background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);"
+            style="
+              background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg);
+            "
             onclick="window.open('https://github.com/DAlexFunk')"
           ></button>
         </div>
       </div>
-      <img class="footerImg" src="./images/marimba704w.jpg" alt="Alex Funk playing the marimba" />
+      <img
+        class="footerImg"
+        srcset="./images/marimba305w.jpg 305w, ./images/marimba704w.jpg 704w"
+        sizes="(max-width: 1000px) 305px, 704px"
+        src="./images/marimba704w.jpg"
+        alt="Alex Funk playing the marimba"
+      />
     </footer>
   </body>
 </html>
